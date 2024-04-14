@@ -1,10 +1,27 @@
 
 # Project - a11y_tasks
 
-Your project **a11y_tasks** has been successfully created. 
-Scripts have been added inside directory: `db/_setup` that allow you 
-to create the respective schemas, workspaces as well as ACLs and features, as long 
-as you specified them during the configuration. 
+## Introduction
+
+This project is used to demonstrate a11y tests with a generated APEX application.
+This app can be installed with dbFlow:
+  - clone the project: `git clone https://github.com/MaikMichel/apex_a11y_demo_app.git`
+  - go into this folder: `cd apex_a11y_demo_app`
+  - add *dbFlow* as submodul: `git submodule update --init --recursive`
+  - run setup to configure project settings: `.dbFlow/setup.sh --generate a11y_tasks --envonly`
+  - run setup to create user and workspace: `.dbFlow/setup.sh --install`
+  - run inital deployment to create table and app: `.dbFlow/build.sh --init --version 1.0.0 --apply`
+
+If you don't want to use dbFlow, you can create the application by your own. This app was initaly made with the APEX Application wizard. Create an App from file and choose the demo dataset "Projects and Tasks".
+
+---
+
+## dbFlow Summary
+
+Your project **a11y_tasks** has been successfully created.
+Scripts have been added inside directory: `db/_setup` that allow you
+to create the respective schemas, workspaces as well as ACLs and features, as long
+as you specified them during the configuration.
 
 a11y_tasks - directory structure
 ```
@@ -28,7 +45,7 @@ build.env                  >> Project configuration
 
 To execute the installation just run: `.dbFlow/setup.sh --install`
 
->For your daily work I recommend the use of the extension: 
+>For your daily work I recommend the use of the extension:
 >**dbFlux** - https://marketplace.visualstudio.com/items?itemName=MaikMichel.dbflow
 >
 >For more information refer to readme: `.dbFlow/readme.md`
