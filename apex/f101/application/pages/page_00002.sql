@@ -21,7 +21,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'04'
 ,p_last_updated_by=>'WSADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20240410182000'
+,p_last_upd_yyyymmddhh24miss=>'20240414113714'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12222758075755277)
@@ -406,6 +406,7 @@ wwv_flow_imp_page.create_jet_chart_axis(
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12232302183755284)
 ,p_plug_name=>'Breadcrumb'
+,p_region_css_classes=>'u-color-43'
 ,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
 ,p_component_template_options=>'#DEFAULT#'
 ,p_plug_template=>wwv_flow_imp.id(11992512468755012)
@@ -414,6 +415,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_menu_id=>wwv_flow_imp.id(11919458329754968)
 ,p_plug_source_type=>'NATIVE_BREADCRUMB'
 ,p_menu_template_id=>wwv_flow_imp.id(12097558097755052)
+,p_plug_comment=>'Add class u-color-43 to make a11y check fail'
 );
 wwv_flow_imp.component_end;
 end;
