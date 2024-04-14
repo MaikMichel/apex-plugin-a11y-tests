@@ -82,6 +82,7 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_items_label_column_name=>'PROJECT'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_threshold_display=>'onIndicator'
 ,p_link_target=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:RR:IR_PROJECT:\&PROJECT.\'
 ,p_link_target_type=>'REDIRECT_PAGE'
@@ -186,6 +187,7 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_items_label_column_name=>'TASK_NAME'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_threshold_display=>'onIndicator'
 ,p_link_target=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:RR:IR_TASK_NAME:\&TASK_NAME.\'
 ,p_link_target_type=>'REDIRECT_PAGE'
@@ -356,6 +358,7 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_items_label_column_name=>'ASSIGNED_TO'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_threshold_display=>'onIndicator'
 ,p_link_target=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:RR:IR_ASSIGNED_TO:\&ASSIGNED_TO.\'
 ,p_link_target_type=>'REDIRECT_PAGE'

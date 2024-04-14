@@ -24,7 +24,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'02'
 ,p_last_updated_by=>'WSADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20240410182001'
+,p_last_upd_yyyymmddhh24miss=>'20240414112150'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12243028590755317)
@@ -138,22 +138,20 @@ wwv_flow_imp_page.create_page_item(
 ,p_item_sequence=>20
 ,p_item_plug_id=>wwv_flow_imp.id(12243028590755317)
 ,p_item_source_plug_id=>wwv_flow_imp.id(12243028590755317)
-,p_use_cache_before_default=>'NO'
-,p_prompt=>'Project'
+,p_placeholder=>'Project'
 ,p_source=>'PROJECT'
 ,p_source_type=>'REGION_SOURCE_COLUMN'
 ,p_display_as=>'NATIVE_TEXT_FIELD'
 ,p_cSize=>32
 ,p_cMaxlength=>50
-,p_label_alignment=>'RIGHT'
 ,p_field_template=>wwv_flow_imp.id(12093406467755048)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_is_persistent=>'N'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'N'
-,p_attribute_03=>'N'
 ,p_attribute_04=>'TEXT'
 ,p_attribute_05=>'NONE'
+,p_item_comment=>'Label removed to  fail a11y check'
 );
 wwv_flow_imp_page.create_page_item(
  p_id=>wwv_flow_imp.id(12244204103755320)
