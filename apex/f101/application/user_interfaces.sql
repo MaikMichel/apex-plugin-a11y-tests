@@ -22,11 +22,11 @@ wwv_flow_imp_shared.create_user_interface(
 ,p_navigation_list_id=>wwv_flow_imp.id(11919950790754971)
 ,p_navigation_list_position=>'SIDE'
 ,p_navigation_list_template_id=>wwv_flow_imp.id(12080778729755042)
-,p_nav_list_template_options=>'#DEFAULT#:t-TreeNav--styleA:js-navCollapsed--hidden'
+,p_nav_list_template_options=>'#DEFAULT#:js-defaultCollapsed:js-navCollapsed--hidden:t-TreeNav--styleA'
 ,p_nav_bar_type=>'LIST'
 ,p_nav_bar_list_id=>wwv_flow_imp.id(12208903346755231)
 ,p_nav_bar_list_template_id=>wwv_flow_imp.id(12083514984755043)
-,p_nav_bar_template_options=>'#DEFAULT#'
+,p_nav_bar_template_options=>'#DEFAULT#:js-menu-callout'
 );
 wwv_flow_imp.component_end;
 end;
