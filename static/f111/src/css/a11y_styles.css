@@ -1,0 +1,53 @@
+#output > table > tbody > tr:nth-child(even) {
+  background: #fafafa
+}
+
+.t-AVPList-label {
+  font-weight: 700;
+}
+
+:root {
+  --show-or-hide-region-header: none;
+}
+
+.t-Region--removeHeader>.t-Region-header {
+  display: var(--show-or-hide-region-header);
+}
+
+/* hide active breadcumb entry */
+.t-Breadcrumb-item.is-active {
+  display: none;
+}
+
+/* reverse order of childs */
+.t-HeroRegion-col.t-HeroRegion-col--content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#testresults td.t-Report-cell[headers="A1Y_CREATED_AT"] {
+  text-wrap: nowrap;
+}
+
+#testresults td.t-Report-cell[headers="URL"] {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+  display: inline-block;
+
+}
+
+
+/* .nested-table {
+  border: none;
+}
+
+.cell-val {
+  border: none;
+}
+
+.cell-key {
+  border: none;
+}  */
