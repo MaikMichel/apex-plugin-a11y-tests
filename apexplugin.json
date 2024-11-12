@@ -1,7 +1,7 @@
 {
   "name": "Run Accessibility Test",
   "version": "1.0.0",
-  "description": "Führt Tests zur Barrierefreiheit für APEX Seiten aus",
+  "description": "Performs accessibility tests for APEX pages",
   "keywords": [
     "Dynamic Action",
     "JavaScript",
