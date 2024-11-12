@@ -55,10 +55,13 @@ With this toggle, the test results are written to a table. This table, "a11y_res
 
 ### Install DEMO App
 
-To be able to try everything out, a sample application is included with the project. This was created using the sample dataset for projects and tasks and the wizard. The sample application already includes the plugin and can test the current page using "Alt+T".
-
 - Log in to the workspace
 - Click on Import
 - Select the Application and upload file: `dist/a11y-tasks-demo-f101.sql`
 
 
+## Sample APP
+
+To be able to try everything out, a sample application is included with the project. This was created using the sample dataset for projects and tasks and the wizard. The sample application already includes the plugin and can test the current page using "Alt+T".
+
+Just visit: ![Screeshot](https://github.com/MaikMichel/apex-plugin-a11y-tests/blob/main/docs/screenshot-showing-a11y-view-board.png?raw=true)
