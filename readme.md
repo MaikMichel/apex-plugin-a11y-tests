@@ -1,15 +1,15 @@
 
 # APEX Plugin - Run Accessibility Test
 
-![](https://img.shields.io/badge/APEX%20Version-23.1-green)   ![](https://img.shields.io/badge/Plug--In%20Type-Dynamic--Action-orange)
+![](https://img.shields.io/badge/APEX%20Versions-23.1%20--%2024.1-green)   ![](https://img.shields.io/badge/Plug--In%20Type-Dynamic--Action-orange)
 
-- []()
-- []()
-- []()
-- []()
+- [What it does](#what-it-does)
+- [Release History](#release-history)
+- [Usage](#usage)
+- [Installation](#installation)
 
 
-## What Does the "Run Accessibility Test" Plugin Do?
+## What it does
 
 The "Run Accessibility Test" plugin performs accessibility tests on the respective page. The plugin can easily be executed via a Dynamic Action, for example, on page 0 during a specific event (KeyUp) or each time a page loads. The plugin uses the axe-core library to run the tests and is initially supplied here in version 4.10.2. (https://github.com/dequelabs/axe-core)
 
@@ -55,9 +55,10 @@ With this toggle, the test results are written to a table. This table, "a11y_res
 
 ### Install DEMO App
 
+To be able to try everything out, a sample application is included with the project. This was created using the sample dataset for projects and tasks and the wizard. The sample application already includes the plugin and can test the current page using "Alt+T".
+
 - Log in to the workspace
 - Click on Import
-- Select the Application and upload file: `dist/a11y-tasks-demp-f101.sql`
+- Select the Application and upload file: `dist/a11y-tasks-demo-f101.sql`
 
-To be able to try everything out, a sample application is included with the project. This was created using the sample dataset for projects and tasks and the wizard. The sample application already includes the plugin and can test the current page using "Alt+T". However, to save the results, the corresponding toggle must still be activated. (This requires the installation of the companion app a11y-view)
 
