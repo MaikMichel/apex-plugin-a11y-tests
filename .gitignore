@@ -3,6 +3,7 @@ apply.env
 
 # static files
 static/f*/dist
+plugin/f*/*/dist
 
 # vscode configuration
 .vscode

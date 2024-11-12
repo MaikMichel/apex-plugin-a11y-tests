@@ -1,0 +1,48 @@
+{
+  "name": "Run Accessibility Test",
+  "version": "1.0.0",
+  "description": "Führt Tests zur Barrierefreiheit für APEX Seiten aus",
+  "keywords": [
+    "Dynamic Action",
+    "JavaScript",
+    "a11y",
+    "Accessibility",
+    "WCAG",
+    "axe-core"
+  ],
+  "homepage": "https://github.com/MaikMichel/apex-plugin-a11y-tests",
+  "bugs": {
+    "url": "https://github.com/MaikMichel/apex-plugin-a11y-tests/issues",
+    "email": "maik.michel78+git@gmail.com"
+  },
+  "license": "MIT",
+  "commercial": "No",
+  "author": {
+    "name": "Maik Michel",
+    "url": "https://micodify.de",
+    "email": "maik.michel78+git@gmail.com",
+    "twitter": "@Maik__Michel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaikMichel/apex-plugin-a11y-tests"
+  },
+  "oracle": {
+    "versions": [
+      "23.1.0"
+    ],
+    "apex": {
+      "versions": [
+        "23.1",
+        "23.2",
+        "24.1"
+      ],
+      "plugin": {
+        "internalName": "DE.DIE21.APEX.A11Y",
+        "type": "item",
+        "demo": "https://apex.oracle.com/pls/apex/r/die21/tasks",
+        "previewImage": "https://github.com/MaikMichel/apex-plugin-a11y-tests/docs/screenshot-showing-a11y-view-board.png"
+      }
+    }
+  }
+}

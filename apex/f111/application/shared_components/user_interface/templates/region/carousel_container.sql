@@ -4,9 +4,9 @@ begin
 --     REGION TEMPLATE: CAROUSEL_CONTAINER
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.6'
-,p_default_workspace_id=>6665137922808662
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -61,7 +61,7 @@ wwv_flow_imp_shared.create_plug_template(
 ,p_translate_this_template=>'N'
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7362517471819511)
+ p_id=>wwv_flow_imp.id(9522958806983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Region Body'
 ,p_placeholder=>'BODY'
@@ -73,7 +73,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_max_fixed_grid_columns=>12
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7362833671819511)
+ p_id=>wwv_flow_imp.id(9523460877983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Change'
 ,p_placeholder=>'CHANGE'
@@ -84,7 +84,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7363161698819511)
+ p_id=>wwv_flow_imp.id(9523974076983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Close'
 ,p_placeholder=>'CLOSE'
@@ -95,7 +95,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7363466115819511)
+ p_id=>wwv_flow_imp.id(9524402912983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Copy'
 ,p_placeholder=>'COPY'
@@ -106,7 +106,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7363713601819511)
+ p_id=>wwv_flow_imp.id(9524990284983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Create'
 ,p_placeholder=>'CREATE'
@@ -117,7 +117,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7364079592819511)
+ p_id=>wwv_flow_imp.id(9525429105983019)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Delete'
 ,p_placeholder=>'DELETE'
@@ -128,7 +128,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7364343764819511)
+ p_id=>wwv_flow_imp.id(9525919919983020)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Edit'
 ,p_placeholder=>'EDIT'
@@ -139,7 +139,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7364632069819511)
+ p_id=>wwv_flow_imp.id(9526408193983020)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Help'
 ,p_placeholder=>'HELP'
@@ -150,7 +150,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7364905538819511)
+ p_id=>wwv_flow_imp.id(9526949813983020)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Next'
 ,p_placeholder=>'NEXT'
@@ -161,7 +161,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7365287632819511)
+ p_id=>wwv_flow_imp.id(9527412692983020)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Previous'
 ,p_placeholder=>'PREVIOUS'
@@ -172,7 +172,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7365502314819511)
+ p_id=>wwv_flow_imp.id(9527900276983020)
 ,p_plug_template_id=>wwv_flow_imp.id(7362257437819510)
 ,p_name=>'Slides'
 ,p_placeholder=>'SUB_REGIONS'

@@ -7,6 +7,12 @@ prompt --install
 @@application/shared_components/navigation/lists/navigation_bar.sql
 @@application/shared_components/navigation/lists/page_navigation.sql
 @@application/shared_components/navigation/listentry.sql
+@@application/shared_components/files/js_test_js.sql
+@@application/shared_components/files/js_test_min_js.sql
+@@application/shared_components/files/js_test_js_map.sql
+@@application/shared_components/files/js_global_js.sql
+@@application/shared_components/files/js_global_min_js.sql
+@@application/shared_components/files/js_global_js_map.sql
 @@application/shared_components/files/icons_app_icon_32_png.sql
 @@application/shared_components/files/icons_app_icon_144_rounded_png.sql
 @@application/shared_components/files/icons_app_icon_192_png.sql
@@ -99,6 +105,7 @@ prompt --install
 @@application/shared_components/logic/build_options.sql
 @@application/shared_components/globalization/messages.sql
 @@application/shared_components/globalization/dyntranslations.sql
+@@application/shared_components/security/authentications/public.sql
 @@application/shared_components/security/authentications/oracle_apex_accounts.sql
 @@application/shared_components/plugins/template_component/theme_42_avatar.sql
 @@application/shared_components/plugins/template_component/theme_42_badge.sql
@@ -107,7 +114,7 @@ prompt --install
 @@application/shared_components/plugins/template_component/theme_42_content_row.sql
 @@application/shared_components/plugins/template_component/theme_42_media_list.sql
 @@application/shared_components/plugins/template_component/theme_42_timeline.sql
-@@application/shared_components/plugins/dynamic_action/com_opitz_apex_a11y.sql
+@@application/shared_components/plugins/dynamic_action/de_die21_apex_a11y.sql
 @@application/user_interfaces/combined_files.sql
 @@application/pages/page_00000.sql
 @@application/pages/page_00001.sql

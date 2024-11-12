@@ -4,9 +4,9 @@ begin
 --     REGION TEMPLATE: CARDS_CONTAINER
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.6'
-,p_default_workspace_id=>6665137922808662
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -32,7 +32,7 @@ wwv_flow_imp_shared.create_plug_template(
 ,p_translate_this_template=>'N'
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7360663394819510)
+ p_id=>wwv_flow_imp.id(9514605824983016)
 ,p_plug_template_id=>wwv_flow_imp.id(7360340922819510)
 ,p_name=>'Region Body'
 ,p_placeholder=>'BODY'
@@ -43,7 +43,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7360964708819510)
+ p_id=>wwv_flow_imp.id(9515161965983016)
 ,p_plug_template_id=>wwv_flow_imp.id(7360340922819510)
 ,p_name=>'Sort Order'
 ,p_placeholder=>'ORDER_BY_ITEM'
@@ -51,10 +51,10 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_has_region_support=>false
 ,p_has_item_support=>true
 ,p_has_button_support=>true
-,p_glv_new_row=>true
+,p_glv_new_row=>false
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7361268684819510)
+ p_id=>wwv_flow_imp.id(9515611818983016)
 ,p_plug_template_id=>wwv_flow_imp.id(7360340922819510)
 ,p_name=>'Sub Regions'
 ,p_placeholder=>'SUB_REGIONS'

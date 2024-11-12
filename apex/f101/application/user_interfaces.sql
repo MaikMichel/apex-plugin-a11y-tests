@@ -4,9 +4,9 @@ begin
 --     USER INTERFACES: 101
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.4'
-,p_default_workspace_id=>11910229390744612
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>101
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -23,6 +23,7 @@ wwv_flow_imp_shared.create_user_interface(
 ,p_navigation_list_position=>'SIDE'
 ,p_navigation_list_template_id=>wwv_flow_imp.id(12080778729755042)
 ,p_nav_list_template_options=>'#DEFAULT#:js-defaultCollapsed:js-navCollapsed--hidden:t-TreeNav--styleA'
+,p_javascript_file_urls=>'#APP_FILES#js/global#MIN#.js'
 ,p_nav_bar_type=>'LIST'
 ,p_nav_bar_list_id=>wwv_flow_imp.id(12208903346755231)
 ,p_nav_bar_list_template_id=>wwv_flow_imp.id(12083514984755043)

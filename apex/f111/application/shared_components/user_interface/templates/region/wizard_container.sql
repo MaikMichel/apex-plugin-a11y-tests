@@ -4,9 +4,9 @@ begin
 --     REGION TEMPLATE: WIZARD_CONTAINER
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.6'
-,p_default_workspace_id=>6665137922808662
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -39,7 +39,7 @@ wwv_flow_imp_shared.create_plug_template(
 ,p_translate_this_template=>'N'
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7437616501819536)
+ p_id=>wwv_flow_imp.id(9715096042983095)
 ,p_plug_template_id=>wwv_flow_imp.id(7437327902819536)
 ,p_name=>'Region Body'
 ,p_placeholder=>'BODY'
@@ -50,7 +50,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7437958173819536)
+ p_id=>wwv_flow_imp.id(9715522772983095)
 ,p_plug_template_id=>wwv_flow_imp.id(7437327902819536)
 ,p_name=>'Close'
 ,p_placeholder=>'CLOSE'
@@ -61,7 +61,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7438212322819536)
+ p_id=>wwv_flow_imp.id(9716063312983095)
 ,p_plug_template_id=>wwv_flow_imp.id(7437327902819536)
 ,p_name=>'Next'
 ,p_placeholder=>'NEXT'
@@ -72,7 +72,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7438510917819537)
+ p_id=>wwv_flow_imp.id(9716534770983095)
 ,p_plug_template_id=>wwv_flow_imp.id(7437327902819536)
 ,p_name=>'Previous'
 ,p_placeholder=>'PREVIOUS'
@@ -83,7 +83,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7438890914819537)
+ p_id=>wwv_flow_imp.id(9717072586983095)
 ,p_plug_template_id=>wwv_flow_imp.id(7437327902819536)
 ,p_name=>'Wizard Sub Regions'
 ,p_placeholder=>'SUB_REGIONS'
@@ -91,7 +91,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_has_region_support=>true
 ,p_has_item_support=>false
 ,p_has_button_support=>false
-,p_glv_new_row=>true
+,p_glv_new_row=>false
 );
 wwv_flow_imp.component_end;
 end;

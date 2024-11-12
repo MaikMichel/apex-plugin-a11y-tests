@@ -4,9 +4,9 @@ begin
 --     REGION TEMPLATE: ITEM_CONTAINER
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.6'
-,p_default_workspace_id=>6665137922808662
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -30,18 +30,18 @@ wwv_flow_imp_shared.create_plug_template(
 ,p_translate_this_template=>'N'
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7412440350819527)
+ p_id=>wwv_flow_imp.id(9647327775983067)
 ,p_plug_template_id=>wwv_flow_imp.id(7412191437819527)
 ,p_name=>'Item'
 ,p_placeholder=>'BODY'
 ,p_has_grid_support=>false
-,p_has_region_support=>true
+,p_has_region_support=>false
 ,p_has_item_support=>true
-,p_has_button_support=>true
+,p_has_button_support=>false
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7412704284819527)
+ p_id=>wwv_flow_imp.id(9647845530983068)
 ,p_plug_template_id=>wwv_flow_imp.id(7412191437819527)
 ,p_name=>'Button End'
 ,p_placeholder=>'BUTTON_END'
@@ -52,7 +52,7 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(7413039368819528)
+ p_id=>wwv_flow_imp.id(9648332615983068)
 ,p_plug_template_id=>wwv_flow_imp.id(7412191437819527)
 ,p_name=>'Button Start'
 ,p_placeholder=>'BUTTON_START'
@@ -60,17 +60,6 @@ wwv_flow_imp_shared.create_plug_tmpl_display_point(
 ,p_has_region_support=>false
 ,p_has_item_support=>false
 ,p_has_button_support=>true
-,p_glv_new_row=>true
-);
-wwv_flow_imp_shared.create_plug_tmpl_display_point(
- p_id=>wwv_flow_imp.id(8110512540184197)
-,p_plug_template_id=>wwv_flow_imp.id(7412191437819527)
-,p_name=>'Sub Regions'
-,p_placeholder=>'SUB_REGIONS'
-,p_has_grid_support=>true
-,p_has_region_support=>true
-,p_has_item_support=>false
-,p_has_button_support=>false
 ,p_glv_new_row=>true
 );
 wwv_flow_imp.component_end;

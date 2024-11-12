@@ -104,6 +104,7 @@ prompt --install
 @@application/shared_components/globalization/messages.sql
 @@application/shared_components/globalization/dyntranslations.sql
 @@application/shared_components/security/authentications/oracle_apex_accounts.sql
+@@application/shared_components/security/authentications/public.sql
 @@application/shared_components/plugins/template_component/theme_42_avatar.sql
 @@application/shared_components/plugins/template_component/theme_42_badge.sql
 @@application/shared_components/plugins/template_component/theme_42_button.sql
@@ -111,9 +112,11 @@ prompt --install
 @@application/shared_components/plugins/template_component/theme_42_content_row.sql
 @@application/shared_components/plugins/template_component/theme_42_media_list.sql
 @@application/shared_components/plugins/template_component/theme_42_timeline.sql
+@@application/shared_components/plugins/dynamic_action/de_die21_apex_a11y.sql
 @@application/user_interfaces/combined_files.sql
 @@application/pages/page_00000.sql
 @@application/pages/page_00001.sql
 @@application/pages/page_00002.sql
+@@application/pages/page_09998.sql
 @@application/pages/page_09999.sql
 @@application/end_environment.sql

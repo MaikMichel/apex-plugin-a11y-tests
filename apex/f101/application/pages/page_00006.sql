@@ -4,9 +4,9 @@ begin
 --     PAGE: 00006
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2023.10.31'
-,p_release=>'23.2.4'
-,p_default_workspace_id=>11910229390744612
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>6733971562520703
 ,p_default_application_id=>101
 ,p_default_id_offset=>0
 ,p_default_owner=>'A11Y_TASKS'
@@ -20,8 +20,6 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_protection_level=>'C'
 ,p_page_component_map=>'08'
-,p_last_updated_by=>'WSADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20240410182001'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12261499187755341)
@@ -35,18 +33,20 @@ wwv_flow_imp_page.create_page_plug(
 ,p_include_rowid_column=>false
 ,p_plug_source_type=>'NATIVE_CSS_CALENDAR'
 ,p_plug_query_num_rows=>15
-,p_attribute_01=>'START_DATE'
-,p_attribute_03=>'PROJECT'
-,p_attribute_07=>'N'
-,p_attribute_09=>'list:navigation'
-,p_attribute_11=>'month:week:day:list:navigation'
-,p_attribute_13=>'N'
-,p_attribute_17=>'Y'
-,p_attribute_18=>'00'
-,p_attribute_19=>'Y'
-,p_attribute_20=>'9'
-,p_attribute_21=>'10'
-,p_attribute_22=>'Y'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'additional_calendar_views', 'list:navigation',
+  'calendar_views_and_navigation', 'month:week:day:list:navigation',
+  'display_column', 'PROJECT',
+  'drag_and_drop', 'N',
+  'event_sorting', 'AUTOMATIC',
+  'first_hour', '9',
+  'maximum_events_day', '10',
+  'multiple_line_event', 'Y',
+  'show_time', 'N',
+  'show_tooltip', 'Y',
+  'show_weekend', 'Y',
+  'start_date_column', 'START_DATE',
+  'time_format', '00')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12261858774755342)
