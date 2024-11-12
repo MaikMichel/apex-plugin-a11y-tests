@@ -39,7 +39,7 @@
       ],
       "plugin": {
         "internalName": "DE.DIE21.APEX.A11Y",
-        "type": "item",
+        "type": "DYNAMIC ACTION",
         "demo": "https://apex.oracle.com/pls/apex/r/die21/tasks",
         "previewImage": "https://github.com/MaikMichel/apex-plugin-a11y-tests/blob/main/docs/screenshot-showing-a11y-view-board.png?raw=true"
       }
