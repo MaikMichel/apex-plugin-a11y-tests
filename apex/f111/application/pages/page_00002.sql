@@ -42,7 +42,8 @@ wwv_flow_imp_page.create_report_region(
 '       APP_USER,',
 '       APP_SESSION,',
 '       A1Y_CREATED_AT,',
-'       APEX_VERSION       ',
+'       APEX_VERSION,',
+'       APP_ALIAS       ',
 '  from A11Y_TESTS_V',
 ' where a1y_id = :P2_A1Y_ID'))
 ,p_ajax_enabled=>'Y'
@@ -71,7 +72,7 @@ wwv_flow_imp_page.create_report_columns(
  p_id=>wwv_flow_imp.id(7622508269927715)
 ,p_query_column_id=>2
 ,p_column_alias=>'APP_PAGE_ID'
-,p_column_display_sequence=>20
+,p_column_display_sequence=>30
 ,p_column_heading=>'Page'
 ,p_use_as_row_header=>'N'
 ,p_heading_alignment=>'LEFT'
@@ -83,7 +84,7 @@ wwv_flow_imp_page.create_report_columns(
  p_id=>wwv_flow_imp.id(7622333137927713)
 ,p_query_column_id=>3
 ,p_column_alias=>'APP_USER'
-,p_column_display_sequence=>30
+,p_column_display_sequence=>40
 ,p_column_heading=>'User'
 ,p_use_as_row_header=>'N'
 ,p_heading_alignment=>'LEFT'
@@ -95,7 +96,7 @@ wwv_flow_imp_page.create_report_columns(
  p_id=>wwv_flow_imp.id(7622699264927716)
 ,p_query_column_id=>4
 ,p_column_alias=>'APP_SESSION'
-,p_column_display_sequence=>40
+,p_column_display_sequence=>50
 ,p_column_heading=>' Session'
 ,p_use_as_row_header=>'N'
 ,p_heading_alignment=>'LEFT'
@@ -107,7 +108,7 @@ wwv_flow_imp_page.create_report_columns(
  p_id=>wwv_flow_imp.id(7623295670927722)
 ,p_query_column_id=>5
 ,p_column_alias=>'A1Y_CREATED_AT'
-,p_column_display_sequence=>50
+,p_column_display_sequence=>60
 ,p_column_heading=>'Created At'
 ,p_use_as_row_header=>'N'
 ,p_column_format=>'DD.MM.YYYY HH24:MI'
@@ -120,8 +121,20 @@ wwv_flow_imp_page.create_report_columns(
  p_id=>wwv_flow_imp.id(7622719103927717)
 ,p_query_column_id=>6
 ,p_column_alias=>'APEX_VERSION'
-,p_column_display_sequence=>60
+,p_column_display_sequence=>70
 ,p_column_heading=>'APEX Version'
+,p_use_as_row_header=>'N'
+,p_heading_alignment=>'LEFT'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_imp_page.create_report_columns(
+ p_id=>wwv_flow_imp.id(6144931647322128)
+,p_query_column_id=>7
+,p_column_alias=>'APP_ALIAS'
+,p_column_display_sequence=>20
+,p_column_heading=>'App Alias'
 ,p_use_as_row_header=>'N'
 ,p_heading_alignment=>'LEFT'
 ,p_disable_sort_column=>'N'
@@ -347,15 +360,15 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_grid_column_span=>3
 ,p_query_type=>'SQL'
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
-'select COUNT_PASSES cnt, ''Count passes'' lbl, ''green'' color',
+'select COUNT_PASSES cnt, ''Passes'' lbl, ''green'' color',
 '  from A11Y_TESTS_V',
 ' where a1y_id = :P2_A1Y_ID',
 ' union all',
-' select COUNT_INAPPLICABLE cnt, ''Count inapplicable'' lbl, ''gray'' color',
+' select COUNT_INAPPLICABLE cnt, ''Inapplicable'' lbl, ''gray'' color',
 '  from A11Y_TESTS_V',
 ' where a1y_id = :P2_A1Y_ID',
 'union all',
-'select COUNT_VIOLATIONS cnt, ''Count violations'' lbl, ''red'' color',
+'select COUNT_VIOLATIONS cnt, ''Violations'' lbl, ''red'' color',
 '  from A11Y_TESTS_V',
 ' where a1y_id = :P2_A1Y_ID '))
 ,p_plug_source_type=>'NATIVE_JET_CHART'
@@ -422,8 +435,6 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_items_label_column_name=>'LBL'
 ,p_color=>'&COLOR.'
 ,p_items_label_rendered=>false
-,p_items_label_display_as=>'PERCENT'
-,p_threshold_display=>'onIndicator'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(7930470008828907)
