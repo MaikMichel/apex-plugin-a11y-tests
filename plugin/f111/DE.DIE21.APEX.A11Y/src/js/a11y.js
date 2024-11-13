@@ -64,7 +64,15 @@ const apxA11y = {
         }
 
         results.apexenv = apex.env;
-        results.apexenv.APP_ALIAS = apex.env.APP_FILES.split("/")[1]; //r/a11y_tasks/111/files/static/v73/"
+
+        const htmlElem = document.querySelector('html');
+        if (htmlElem) {
+          const classWithPrefix = Array.from(htmlElem.classList).find(cls => cls.startsWith('app-'));
+
+          if (classWithPrefix) {
+            results.apexenv.APP_ALIAS = classWithPrefix.substring(4); // "app-A11Y-VIEW"
+          }
+        }
 
         console.info(`[apxA11y]: Accessibility Results`, results);
 
