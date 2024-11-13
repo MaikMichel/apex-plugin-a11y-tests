@@ -47,12 +47,14 @@ const apxA11y = {
             targetObj.description  = sourceObject.description;
             targetObj.help         = sourceObject.help;
             targetObj.helpUrl      = sourceObject.helpUrl;
+            const elements = document.querySelectorAll(sourceObject.nodes[0].target[0])
+            targetObj.firstElement  = elements[0];
             targetObj.firstTarget  = sourceObject.nodes[0].target[0];
 
             return targetObj; // Return the constructed object
           });
 
-            console.table(tableData);
+            console.table(tableData, ['id', 'impact', 'description', 'tags', 'help', 'firstTarget']);
 
             console.info(`[apxA11y]: ${results.violations.length} violations found`);
             console.info(`[apxA11y]: ${results.passes.length} test successfully passed`);
