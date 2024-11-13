@@ -13,7 +13,7 @@
 
 The "Run Accessibility Test" plugin performs accessibility tests on the respective page. The plugin can easily be executed via a Dynamic Action, for example, on page 0 during a specific event (KeyUp) or each time a page loads. The plugin uses the axe-core library to run the tests and is initially supplied here in version 4.10.2. (https://github.com/dequelabs/axe-core)
 
-![](docs\screen-record-show-plugin-with-companion-app.gif)
+![](docs/screen-record-show-plugin-with-companion-app.gif)
 
 ## Release History
 
