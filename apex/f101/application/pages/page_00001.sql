@@ -22,6 +22,43 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'13'
 );
 wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(6144789583322126)
+,p_plug_name=>'Demo Instructions'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody:margin-top-lg'
+,p_plug_template=>wwv_flow_imp.id(12031590474755024)
+,p_plug_display_sequence=>50
+,p_location=>null
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<ul>',
+'    <li>Open developer console (F12)</li>',
+'    <li>Set focus back to page</li>',
+'    <li>Use Shourtcut "Alt+T" or click on "Run a11y" in toolbar</li>',
+'    <li>Watch console output</li>',
+'    <li>Click on link in output to open a11y-view to show test results</li>    ',
+'</ul>'))
+,p_plug_display_condition_type=>'EXPRESSION'
+,p_plug_display_when_condition=>'lower(apex_util.host_url) like ''%apex.oracle.com%'''
+,p_plug_display_when_cond2=>'PLSQL'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(6144804160322127)
+,p_plug_name=>'Warning'
+,p_region_template_options=>'#DEFAULT#:t-Alert--colorBG:t-Alert--horizontal:t-Alert--defaultIcons:t-Alert--warning:t-Alert--accessibleHeading:margin-top-lg'
+,p_plug_template=>wwv_flow_imp.id(11971735478755007)
+,p_plug_display_sequence=>40
+,p_location=>null
+,p_plug_source=>'Due to the restrictions regarding the size of the tablespaces at <strong>apex.oracle.com</strong>, only the latest 10 test reports are saved. Older ones are deleted'
+,p_plug_display_condition_type=>'EXPRESSION'
+,p_plug_display_when_condition=>'lower(apex_util.host_url) like ''%apex.oracle.com%'''
+,p_plug_display_when_cond2=>'PLSQL'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'HTML')).to_clob
+);
+wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(12221435131755274)
 ,p_plug_name=>'Tasks'
 ,p_region_template_options=>'#DEFAULT#'
