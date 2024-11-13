@@ -19,7 +19,12 @@ The "Run Accessibility Test" plugin performs accessibility tests on the respecti
 
 - 1.0.0
   - Initial Version
-
+- 1.1.0
+  - Show alert on apex.oracle.com, indicating to removal of old reports
+  - Store and fetch App-Alias
+  - Show clickable target element in result array inside console
+  - Show error in console when somethine went wrong
+  - some small fixes
 
 
 ## Usage
