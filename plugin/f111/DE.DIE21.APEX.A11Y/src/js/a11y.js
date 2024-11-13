@@ -63,9 +63,10 @@ const apxA11y = {
             console.info(`[apxA11y]: no violations found. ${results.passes.length} tests successfully passed.`);
         }
 
-        console.info(`[apxA11y]: Accessibility Results`, results);
-
         results.apexenv = apex.env;
+        results.apexenv.APP_ALIAS = apex.env.APP_FILES.split("/")[1]; //r/a11y_tasks/111/files/static/v73/"
+
+        console.info(`[apxA11y]: Accessibility Results`, results);
 
         // Submit items to server-side
         const ajaxResult = apex.server.plugin( daThis.action.ajaxIdentifier, {
