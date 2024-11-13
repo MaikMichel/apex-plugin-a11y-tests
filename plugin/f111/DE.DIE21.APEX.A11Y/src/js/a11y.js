@@ -75,7 +75,11 @@ const apxA11y = {
 
         ajaxResult.done( function( data ) {
           // do something here
-          console.info(`[apxA11y]: View results at: ${window.location.origin}${data.link}`);
+          if (data.status === "success") {
+            console.info(`[apxA11y]: View results at: ${window.location.origin}${data.link}`);
+          } else {
+            console.error("Something went wrong", data.message);
+          }
         } ).fail(function( jqXHR, textStatus, errorThrown ) {
             // handle error
             console.error("[apxA11y].ajaxResult-CallBack Error", jqXHR, textStatus, errorThrown);
